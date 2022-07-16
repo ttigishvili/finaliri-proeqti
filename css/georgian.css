@@ -22,9 +22,7 @@
   border: none;
   scroll-behavior: smooth;
 }
-body {
-  overflow-x: hidden;
-}
+
 *:focus {
   outline: none;
   border: none;
@@ -69,10 +67,10 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-.nav-a {
+.nav a {
   font-size: 20px;
   font-weight: 800;
-  font-family: 'ZooeySolid';
+  font-family: 'acadnusxur';
   text-decoration: none;
   color: black;
   padding: 10px 1px;
@@ -89,17 +87,20 @@ a.active {
   color: #fac564;
   border-color: #fac564;
 }
-.nav-a:hover {
+nav a:hover {
   border-color: #fac564;
 }
+.burger-icon {
+  display: none;
+}
+
 .text-block {
   position: absolute;
   top: 30%;
   left: 30%;
 }
 .textblock-h1,
-.textblock-h2,
-.middle-text-h2 {
+.textblock-h2 {
   font-weight: bold;
   font-family: 'Indie Flower';
   text-decoration: none;
@@ -128,15 +129,17 @@ a.active {
   background-color: white;
 }
 .middle-text-h2 {
-  padding-right: 0px;
-  padding-left: 0px;
-  font-size: 90px;
-
-}
-#geo,
-#eng {
-  width: 50px;
-  height: auto;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: 'kolxeti';
+  text-decoration: none;
+  color: black;
+  padding: 10px 1px;
+  margin-left: 10px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
 }
 /* navigation ends */
 /* header ends */
@@ -303,6 +306,7 @@ img {
 .bear-wrapper {
   display: flex;
   justify-content: center;
+
   padding-top: 45px;
 }
 .bear-div {
@@ -353,7 +357,7 @@ img {
   color: black;
 }
 .about-paragraph {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Edu QLD Beginner';
   text-decoration: none;
   color: black;
@@ -436,76 +440,8 @@ img {
   text-decoration: underline;
 }
 
-.my-button {
-  background-color: transparent;
-  border: 10px;
-  cursor: pointer;
-  font-size: 30px;
-  margin-left: 32px;
-  float: left;
-  line-height: 70px;
-  display: none;
-}
-
-.my-button:focus {
-  outline: none;
-}
-
-nav {
-  flex-wrap: wrap;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-nav ul li {
-  padding: 20px 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
 @media (max-width: 800px) {
-  nav ul {
-    display: none;
-    width: 100%;
-  }
-
-  nav ul.show {
-    display: flex;
-    flex-direction: column;
-    margin-left: 12px;
-  }
-
-  .my-button {
-    display: block;
-  }
   .wrapper {
     justify-content: start;
   }
-}
-
-@media (max-width: 600px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul.show {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .my-button {
-    display: block;
-  }
-}
-
-a {
-  color: inherit;
 }
